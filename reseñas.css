@@ -1,0 +1,25 @@
+.col-image {
+    width: 100%;  /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: auto;  /* Mantener la proporción original de la imagen */
+    max-width: 500px;  /* Limitar el tamaño máximo a 150px */
+    object-fit: cover; /* Asegurarse de que la imagen cubra el espacio sin distorsionarse */
+    display: flex;
+  }
+  
+  /* Ajustar las columnas */
+  .col {
+    display: flex;
+    justify-content: center;  /* Centra las imágenes dentro de cada columna */
+    align-items: center;
+    max-width: 200px;  /* Limitar el tamaño máximo de las columnas */
+    padding: 5px; /* Espaciado entre las imágenes */
+  }
+  
+  /* Hacer que el contenedor de imágenes sea responsivo */
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-items: center;
+
+  }
